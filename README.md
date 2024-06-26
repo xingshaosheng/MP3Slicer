@@ -20,7 +20,7 @@ MP3Slicer 是一个高效、易用的 Java 工具库，专为MP3音频文件切�
 
 ```yaml
 <dependency>
-	<groupId>com.mpatric</groupId>
+    <groupId>com.mpatric</groupId>
     <artifactId>mp3agic</artifactId>
     <version>0.9.1</version>
 </dependency>
