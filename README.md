@@ -12,3 +12,29 @@ MP3Slicer 是一个高效、易用的 Java 工具库，专为MP3音频文件切�
 
 ### 前提条件
 - Java 8 或更高版本
+- Maven 构建工具
+
+### 导入步骤
+
+1.下载依赖
+
+```yaml
+<dependency>
+	<groupId>com.mpatric</groupId>
+    <artifactId>mp3agic</artifactId>
+    <version>0.9.1</version>
+</dependency>
+```
+
+2.导入类文件MP3Slicer.Class
+
+3.调用类方法完成音频文件切割
+
+```java
+//按照音频片段大小切割
+public static List<byte[]> split(File sourceFile,long segmentSize);
+
+//按照音频片段起始结束时间切割
+public static byte[] split(File sourceFile,int startSecond,int endSecond);
+```
+
